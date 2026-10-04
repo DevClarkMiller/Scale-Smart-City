@@ -1,0 +1,22 @@
+{
+    "displayName": "Main Gate Module",
+     "input": {
+        "type": "TollGateInput",
+        "paymentProcessor": {
+            "paymentProcessorType": "TikkiePaymentProcessor",
+            "tikkieApiUrl": "https://api-sandbox.abnamro.com/v2/tikkie",
+            "apiKey": "API_KEY",
+            "appToken": "APP_TOKEN",
+            "oled": {
+                "sdaPin": 17,
+                "sclPin": 16,
+                "screenHeight": 64,
+                "screenWidth": 128
+            }
+        }
+    },
+    "servo": {
+        "pwmPin": 10,
+        "rotation": 145
+    }
+}

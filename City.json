@@ -1,0 +1,57 @@
+{
+    "serverHostname": "145.92.189.170",
+    "location": "VoidVille - Main Intersection Tile",
+    "modules": [
+        {
+            "id": 0,
+            "displayName": "System Management Module",
+            "moduleType": "SystemManagementModule"
+        },
+        {
+            "id": 1,
+            "displayName": "Porta Potty",
+            "moduleType": "PortaPottyModule",
+            "occupancy": "OCCUPIED",
+            "ldrPin": 10,
+            "statusLED": {
+                "redPin": 45,
+                "greenPin": 48,
+                "bluePin": 47
+            }
+        },
+        {
+            "id": 2,
+            "displayName": "Crossroad Intersection Controller",
+            "moduleType": "IntersectionController",
+            "lights": [
+                {
+                    "direction": "South",
+                    "state": "Red",
+                    "redPin": 4,
+                    "yellowPin": 5,
+                    "greenPin": 6,
+                    "carSenseInterval": 500,
+                    "expectedSensorDistance": -1
+                },
+                {
+                    "direction": "East",
+                    "state": "Red",
+                    "redPin": 15,
+                    "yellowPin": 16,
+                    "greenPin": 17,
+                    "carSenseInterval": 500,
+                    "expectedSensorDistance": -1
+                },
+                {
+                    "direction": "West",
+                    "state": "Red",
+                    "redPin": 39,
+                    "yellowPin": 38,
+                    "greenPin": 37,
+                    "carSenseInterval": 500,
+                    "expectedSensorDistance": -1
+                }
+            ]
+        }
+    ]
+}
